@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-content>
+    <h1>Entregas</h1>
+
+    <ion-item>
+      <ion-label position="floating">Cidade de Origem</ion-label>
+      <ion-input [(ngModel)]="cidOrigem"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cidade de Destino</ion-label>
+      <ion-input [(ngModel)]="cidDestino"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Estado de Origem</ion-label>
+      <ion-input [(ngModel)]="estOrigem"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Estado de Destino</ion-label>
+      <ion-input [(ngModel)]="estDestino"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Km percorrido</ion-label>
+      <ion-input [(ngModel)]="kmPercorrido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Peso(kg)</ion-label>
+      <ion-input [(ngModel)]="peso"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="simulacaoEntrega()">
+      <ion-icon slot="start" name="star"></ion-icon>
+      Calcular
+    </ion-button>
+    <ion-label>Resultado{{ resultado }}</ion-label>
+  </ion-content>
+</ion-app>
